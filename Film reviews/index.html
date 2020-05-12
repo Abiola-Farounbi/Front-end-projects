@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png" type="image / jpeg" / >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"  href="style.css"/>
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    
+    <title>Film Blog</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="card card-body mt-5">
+                    <div class="text-center">
+                    <h1 class="heading display-5 pb-5">Review a movie <span class="fas fa fa-film" style="color:dodgerblue;"> </span></h1>
+                    </div>
+                    <div class="error"></div>
+                    <form id="book-form">
+                        <div class="form-group">
+                            <label for="name"> Movie Title </label>
+                            <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                            <span class="input-group-text" style="background-color:dodgerblue;"> </span>
+                                        </div>
+                            <input type="text" id="name" class='form-control '>
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                                <label for="year"> Year Released </label>
+                                <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" style="background-color:dodgerblue;"> </span>
+                                        </div>
+                                <input type="text" id="year" class='form-control '>
+                                </div>
+                         </div>
+                         <div class="form-group">
+                                <label for="review"> Review </label>
+                                <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" style="background-color:dodgerblue;"> </span>
+                                        </div>
+                                <textarea class="form-control"  maxlength="850" row="7" col="7"id="review"></textarea>
+                                </div>
+                        </div>   
+                        <div class="form-group">
+                                <input type="submit" value="Submit" class="btn btn-info extra" >
+                        </div>
+                    </form>
+                    <div class="table-responsive-sm">
+                        <table class="table table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Movie Title</th>
+                                    <th> Review </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="book-list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

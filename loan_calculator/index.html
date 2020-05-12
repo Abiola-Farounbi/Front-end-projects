@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title> The Investment Bank</title>
+</head>
+<body class="bg-darki"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3">Investment Bank</h1>
+                    <h3 class="heading display-5 pb-3">Calculate Your Investment</h3>
+                    <form  id="loan-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon ">$</span>
+                                <input type="number" class="form-control" id="amount" placeholder="Investment">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon ">%</span>
+                                <input type="number" class="form-control" id="interest" placeholder=" annual interest rate">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="years" placeholder="Years to invest">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Calculate" class="btn btn-dark btn-block" >
+                        </div>
+                        <div class="form-group">
+                              <button onclick="window.location= '' " class="btn btn-dark btn-block"> Do another calculation </button>
+                            </div>
+                    </form>
+                    <!-- LOADER -->
+                    <div id="loading">
+                        <img src="img/loading.gif"/>
+                    </div>
+
+                <div id="results" class="pt-4">
+                    <h4> Result</h4>
+                       <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group ">Monthly Payment</span>
+                            <input type="number" class="form-control" id="monthly-payment" disabled>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group ">Total Payment</span>
+                            <input type="number" class="form-control" id="total-payment" disabled>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group ">Total Interest</span>
+                            <input type="number" class="form-control" id="total-interest" disabled>
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

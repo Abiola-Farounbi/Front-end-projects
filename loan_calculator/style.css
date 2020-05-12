@@ -1,0 +1,11 @@
+.input-group-addon{
+    background-color: #a89a8a;
+    width: 20px;
+
+}
+.bg-darki{
+    background-color: indigo;
+}
+#loading, #results{
+    display:none;
+}
